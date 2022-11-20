@@ -138,7 +138,7 @@
 
     /* #footer */
     #footer{
-        @apply pt-20 py-5 lg:py-10 bg-primary
+        @apply lg:pt-20 py-5 lg:py-10 bg-primary
     }
     #footer .container{
         @apply lg:px-[100px] flex flex-col lg:gap-[76px] gap-9

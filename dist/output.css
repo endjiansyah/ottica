@@ -872,14 +872,14 @@ video {
 #footer {
   --tw-bg-opacity: 1;
   background-color: rgb(80 90 91 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  padding-top: 5rem;
 }
 
 @media (min-width: 1024px) {
   #footer {
-    padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    padding-top: 5rem;
   }
 }
 
@@ -958,10 +958,6 @@ video {
 
 .-z-10 {
   z-index: -10;
-}
-
-.z-0 {
-  z-index: 0;
 }
 
 .ml-3 {
