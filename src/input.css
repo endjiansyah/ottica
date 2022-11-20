@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .content-auto {
+      content-visibility: auto;
+    }
+    body{
+        font-family: 'Inter';
+    }
+    .text-title{
+        font-family: 'Playfair Display';
+    }
+    .btn{
+        @apply
+        text-putih1 text-base lg:text-2xl font-medium leading-[29px] box-border px-5 py-2 lg:py-5 lg:px-8 box-border bg-primary rounded-lg text-center;
+    }
+    .col5{
+        width: calc((100% * 5 / 12));
+    }
+    .col6{
+        width:50%;
+    }
+    h2{
+        @apply font-black text-3xl lg:text-[56px] lg:leading-[73px] lg:mb-8 text-title mb-5
+    }
+    h3{
+        @apply font-bold text-base lg:text-xl lg:leading-[23px] tracking-widest uppercase lg:mb-4
+    }
+    h4{
+        @apply text-putih2 font-black text-2xl lg:text-[32px] lg:leading-[42px]
+    }
+    h5{
+        @apply text-2xl leading-8 text-putih1 font-bold
+    }
+    .desc{
+        @apply font-normal text-lg lg:text-2xl lg:leading-10
+    }
+    #footer li{
+        @apply mb-[25px]
+    }
+    #footer p, #footer a{
+        @apply text-base leading-[21px] text-putih1
+    }
+    .copyr{
+        @apply text-sm leading-[21px] text-putih1 
+    }
+}
+
+@layer components{
+    #navbar{
+        @apply text-lg lg:text-2xl lg:leading-[29px] fixed w-full bg-putih2/70 p-5 items-center lg:p-8
+    }
+    #navbar .container{
+        @apply flex justify-center flex-col gap-5 lg:gap-20 lg:flex-row items-center font-semibold text-primary
+    }
+    .nav{
+        @apply flex flex-col justify-center text-center gap-5 lg:gap-20 lg:flex-row 
+    }
+    .nav-active{
+        @apply underline text-[#d36060]
+    }
+
+    /* hero */
+    #hero{
+        @apply h-[450px] lg:h-[100vh] w-auto bg-[url('../src/assets/hero-m.png')] lg:bg-[url('../src/assets/hero.png')] lg:bg-cover bg-[length:100%_auto]  
+    }
+    #hero .container{
+        @apply flex justify-end items-center h-full p-5
+    }
+    #hero .title{
+        @apply col6 md:col5 flex flex-col gap-5 lg:gap-12
+    }
+    #hero h1{
+        @apply text-title font-black lg:text-[120px] lg:leading-[156px] text-putih2 text-3xl md:text-5xl
+    }
+    #hero p{
+        @apply text-putih2 font-normal lg:text-[40px] lg:leading-[52px] text-xl md:text-3xl
+    }
+
+    /* #spoiler & #promote */
+    #spoiler{
+        @apply lg:py-[120px] py-5
+    }
+    #spoiler .container{
+        @apply gap-8 lg:gap-[119px] flex items-center flex-col lg:flex-row
+    }
+     .gambar, .description{
+        @apply lg:col5 px-5 lg:p-0
+    }
+    #spoiler h3, #spoiler h2,#promote h3, #promote h2{
+        @apply text-primary
+    }
+    #spoiler p, #promote p{
+        @apply desc text-gray3
+    }
+    #spoiler .gambar{
+        @apply hidden lg:block
+    }
+
+    /* #sponsored */
+    #sponsored{
+        @apply py-20 bg-primary
+    }
+    #sponsored .container{
+        @apply flex lg:gap-[120px] flex-col justify-center gap-10
+    }
+    #sponsored .top{
+        @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full gap-8 flex-col-reverse
+    }
+    #sponsored .bottom{
+        @apply flex text-center justify-center flex-col gap-5 lg:gap-10 place-content-evenly
+    }
+    #sponsored .logos{
+        @apply grid grid-cols-2 lg:grid-cols-4 mx-auto gap-5 lg:gap-20
+    }
+    #sponsored .logos img{
+        @apply m-auto
+    }
+    #promote .description h2, #promote .description h3{
+        @apply text-center
+    }
+    #sponsored .description h2,#sponsored .description h3,#spoiler .description h2,#spoiler .description h3{
+        @apply text-center lg:text-left
+    }
+
+    /* #promote */
+    #promote{
+        @apply py-5 lg:py-[120px]
+    }
+    #promote .container{
+        @apply flex flex-col gap-8 lg:gap-[69px] justify-center
+    }
+    #promote .description{
+        @apply lg:col6 m-auto
+    }
+
+    /* #footer */
+    #footer{
+        @apply pt-20 py-5 lg:py-10 bg-primary
+    }
+    #footer .container{
+        @apply lg:px-[100px] flex flex-col lg:gap-[76px] gap-9
+    }
+    #footer .top{
+        @apply flex justify-between
+    }
+    #footer .top .left{
+        @apply  lg:flex flex-col gap-4 hidden
+    }
+    #footer .top .right{
+        @apply flex lg:gap-[100px] justify-between lg:flex-row lg:justify-center lg:justify-start flex-wrap items-start
+    }
+    #footer .top .right .footer-r{
+        @apply flex flex-col lg:gap-7 gap-2 m-5 lg:m-0
+    }
+}
