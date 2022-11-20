@@ -578,6 +578,18 @@ video {
   }
 }
 
+.nav li a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(211 96 96 / var(--tw-text-opacity));
+}
+
+.nav li .btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .nav-active {
   --tw-text-opacity: 1;
   color: rgb(211 96 96 / var(--tw-text-opacity));

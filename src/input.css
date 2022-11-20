@@ -58,6 +58,15 @@
     .nav{
         @apply flex flex-col justify-center text-center gap-5 lg:gap-20 lg:flex-row 
     }
+
+    .nav li a{
+        @apply hover:text-[#d36060]
+    }
+
+    .nav li .btn{
+        @apply hover:bg-gray-700 hover:text-white
+    }
+
     .nav-active{
         @apply underline text-[#d36060]
     }
