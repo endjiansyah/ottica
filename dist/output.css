@@ -960,6 +960,10 @@ video {
   z-index: -10;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
