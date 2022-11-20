@@ -50,7 +50,7 @@
 
 @layer components{
     #navbar{
-        @apply text-lg lg:text-2xl lg:leading-[29px] fixed w-full bg-putih2/70 p-5 items-center lg:p-8
+        @apply text-lg lg:text-2xl lg:leading-[29px] fixed w-full bg-putih2/70 p-5 items-center lg:p-8 z-50
     }
     #navbar .container{
         @apply flex justify-center flex-col gap-5 lg:gap-20 lg:flex-row items-center font-semibold text-primary
